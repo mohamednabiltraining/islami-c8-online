@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_c8_online/ui/hadeth_details/hadeth_details.dart';
 import 'package:islami_c8_online/ui/home/home_screen.dart';
 import 'package:islami_c8_online/ui/splash/splash_screen.dart';
 import 'package:islami_c8_online/ui/sura_details/sura_details.dart';
@@ -15,7 +16,8 @@ class MyApplication extends StatelessWidget {
       routes: {
         HomeScreen.routeName: (buildContext) => HomeScreen(),
         SplashScreen.routeName: (buildContext) => SplashScreen(),
-        SuraDetailsScreen.routeName: (buildContext) => SuraDetailsScreen()
+        SuraDetailsScreen.routeName: (buildContext) => SuraDetailsScreen(),
+        HadethDetailsScreen.routeName: (buildContext) => HadethDetailsScreen(),
       },
       theme: ThemeData(
           progressIndicatorTheme:
