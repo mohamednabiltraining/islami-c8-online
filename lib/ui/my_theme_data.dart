@@ -26,17 +26,24 @@ class MyThemeData {
     ),
     textTheme: const TextTheme(
       headline3: TextStyle(
-          // ex.Screen title
-          color: lightMainTextColor,
-          fontSize: 32),
-      headline5: TextStyle(
-          // sub headers
-          fontSize: 24,
-          color: lightMainTextColor),
-      bodyText1: TextStyle(fontSize: 24, color: lightMainTextColor),
-      bodyText2: TextStyle(fontSize: 20, color: lightMainTextColor),
-    ),
-  );
+            // ex.Screen title
+            color: lightMainTextColor,
+            fontSize: 32),
+        headline5: TextStyle(
+            // sub headers
+            fontSize: 24,
+            color: lightMainTextColor),
+        bodyText1: TextStyle(fontSize: 24, color: lightMainTextColor),
+        bodyText2: TextStyle(fontSize: 20, color: lightMainTextColor),
+      ),
+      bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(12),
+              topLeft: Radius.circular(12),
+            ),
+          )));
   static var darkTheme = ThemeData(
     progressIndicatorTheme:
         const ProgressIndicatorThemeData(color: darkAccentColor),
@@ -56,17 +63,22 @@ class MyThemeData {
     ),
     textTheme: const TextTheme(
       headline3: TextStyle(
-          // ex.Screen title
-          color: darkMainTextColor,
-          fontSize: 32),
-      headline5: TextStyle(
-          // sub headers
-          fontSize: 24,
-          color: darkMainTextColor),
-      bodyText1: TextStyle(fontSize: 24, color: darkMainTextColor),
-      bodyText2: TextStyle(fontSize: 20, color: darkMainTextColor),
-    ),
-  );
-
-  static ThemeMode themeMode = ThemeMode.dark;
+            // ex.Screen title
+            color: darkMainTextColor,
+            fontSize: 32),
+        headline5: TextStyle(
+            // sub headers
+            fontSize: 24,
+            color: darkMainTextColor),
+        bodyText1: TextStyle(fontSize: 24, color: darkMainTextColor),
+        bodyText2: TextStyle(fontSize: 20, color: darkMainTextColor),
+      ),
+      bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: darkPrimaryColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(12),
+              topLeft: Radius.circular(12),
+            ),
+          )));
 }

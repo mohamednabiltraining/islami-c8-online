@@ -5,5 +5,10 @@
   "hadeth": "الحديث",
   "tasbeh": "التسبيح",
   "radio": "الاذاعه",
-  "hadeth_num": "رقم الحديث"
+  "hadeth_num": "رقم الحديث",
+  "settings": "الاعدادات",
+  "theme": "المظهر",
+  "language": "اللغه",
+  "light": "فاتح",
+  "dark": "داكن"
 }
