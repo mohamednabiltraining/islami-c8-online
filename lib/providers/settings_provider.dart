@@ -4,18 +4,29 @@ class SettingsProvider extends ChangeNotifier {
   ThemeMode themeMode = ThemeMode.light;
   String languageCode = 'en';
 
+  // shared preferences
+  // key -> value
+
+  SettingsProvider() {
+    // load settings configurations from
+    //shared preferences if exist
+  }
+
   void changeLanguage(String newLangCode) {
     languageCode = newLangCode;
+    // save lang -> newLangCode
     notifyListeners();
   }
 
   void enableDarkMode() {
     themeMode = ThemeMode.dark;
+    //save theme -> 'dark'
     notifyListeners();
   }
 
   void enableLightMode() {
     themeMode = ThemeMode.light;
+    // save theme -> 'light'
     notifyListeners();
   }
 
